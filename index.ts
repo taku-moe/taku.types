@@ -96,7 +96,11 @@ export interface Channel {
    */
   name: string;
   /**
-   * The channel's tpye
+   * The channel's descripption
+   */
+  description: string;
+  /**
+   * The channel's type
    */
   type: ChannelTypes;
 }
