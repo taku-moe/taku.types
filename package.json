@@ -1,0 +1,18 @@
+{
+  "name": "@taku.moe/types",
+  "version": "1.0.0",
+  "description": "Types for Taku",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/taku-moe/taku.types",
+  "scripts": {
+    "compile": "tsc",
+    "publish": "npm publish --access public",
+    "bump": "npm version patch --force",
+    "release": "npm run compile && npm run publish",
+    "auto": "npm run bump && npm run release"
+  },
+  "keywords": [],
+  "author": "Geoxor",
+  "license": "ISC"
+}
