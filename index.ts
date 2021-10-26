@@ -11,7 +11,7 @@ export type DeviceTypes = "desktop" | "mobile" | "terminal";
 /**
  * The different types channels can be
  */
-export type ChannelTypes = "voice" | "text";
+export type ChannelTypes = "voice" | "text" | "rules" | "announcements" | "folder";
 
 /**
  * This is the cutdown data the backend server has of a guild
