@@ -158,3 +158,38 @@ export interface User {
    */
   guild_list: string[];
 }
+
+export interface File {
+  /**
+   * The name of the file
+   */
+  filename: string;
+  /**
+   * The size of the file in bytes
+   */
+  size: number;
+  /**
+   * The epoch timestamp of when the file was created
+   */
+  date_created: number;
+  /**
+   * The epoch timestamp of when the file was modified
+   */
+  date_modified: number;
+  /**
+   * The ID of the user who uploaded the file
+   */
+  uploaded_by: string | undefined;
+  /**
+   * The file extension
+   */
+  extension: string;
+  /**
+   * If the file is a directory or not
+   */
+  is_directory: boolean;
+  /**
+   * The download URL to the file
+   */
+  download_link: string;
+};
