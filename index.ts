@@ -33,6 +33,10 @@ export interface BackendGuild {
    * The guilds connection URL
    */
   hostname: string;
+  /**
+   * If the guild's file explorer is enabled
+   */
+  enable_explorer: boolean;
 }
 
 /**
