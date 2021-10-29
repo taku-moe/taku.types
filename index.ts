@@ -167,33 +167,29 @@ export interface File {
   /**
    * The name of the file
    */
-  filename: string;
+  n: string;
   /**
-   * The size of the file in bytes
-   */
-  size: number;
+  * The size of the file in bytes
+  */
+  s: number;
   /**
-   * The epoch timestamp of when the file was created
-   */
-  date_created: number;
+  * The epoch timestamp of when the file was created
+  */
+  dc: number;
   /**
-   * The epoch timestamp of when the file was modified
-   */
-  date_modified: number;
+  * The epoch timestamp of when the file was modified
+  */
+  dm: number;
   /**
-   * The ID of the user who uploaded the file
-   */
-  uploaded_by: string | undefined;
+  * The file extension
+  */
+  e: string;
   /**
-   * The file extension
-   */
-  extension: string;
+  * If the file is a directory or not
+  */
+  dir: boolean;
   /**
-   * If the file is a directory or not
-   */
-  is_directory: boolean;
-  /**
-   * The download URL to the file
-   */
-  download_link: string;
+  * The download URL to the file
+  */
+  dl: string;
 };
