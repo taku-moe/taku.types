@@ -11,7 +11,11 @@ export type DeviceTypes = "desktop" | "mobile" | "terminal";
 /**
  * The different types channels can be
  */
-export type ChannelTypes = "voice" | "text" | "rules" | "announcements" | "folder";
+export type ChannelTypes = VoiceChannelTypes & TextChannelTypes;
+
+export type TextChannelTypes = "text" | "rules" | "announcements" | "folder";
+
+export type VoiceChannelTypes = "voice";
 
 /**
  * This is the cutdown data the backend server has of a guild
@@ -169,27 +173,27 @@ export interface File {
    */
   n: string;
   /**
-  * The size of the file in bytes
-  */
+   * The size of the file in bytes
+   */
   s: number;
   /**
-  * The epoch timestamp of when the file was created
-  */
+   * The epoch timestamp of when the file was created
+   */
   dc: number;
   /**
-  * The epoch timestamp of when the file was modified
-  */
+   * The epoch timestamp of when the file was modified
+   */
   dm: number;
   /**
-  * The file extension
-  */
+   * The file extension
+   */
   e: string;
   /**
-  * If the file is a directory or not
-  */
+   * If the file is a directory or not
+   */
   dir: boolean;
   /**
-  * The download URL to the file
-  */
+   * The download URL to the file
+   */
   dl: string;
-};
+}
